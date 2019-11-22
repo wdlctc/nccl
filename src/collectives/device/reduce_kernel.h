@@ -71,7 +71,7 @@ struct FuncSum<int8_t> {
 #endif
   }
   __device__ int8_t operator()(const int8_t x, const int8_t y) const {
-    return x+y;
+    return (x+y)/2;
   }
 };
 template<>
