@@ -21,7 +21,7 @@ struct FuncNull {
 template<typename T>
 struct FuncSum {
   __device__ T operator()(const T x, const T y) const {
-    return x + y;
+    return (x + y) / 2;
   }
 };
 
